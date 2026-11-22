@@ -4,7 +4,7 @@
   "description": "Portable specification-driven engineering method and skills for AI coding agents",
   "repository": {
     "type": "git",
-    "url": "https://github.com/luismpenholato/verdicspec.git"
+    "url": "git+https://github.com/luismpenholato/verdicspec.git"
   },
   "homepage": "https://github.com/luismpenholato/verdicspec#readme",
   "bugs": {
