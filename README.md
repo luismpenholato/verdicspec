@@ -3,25 +3,21 @@
 [![CI](https://github.com/luismpenholato/verdicspec/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/luismpenholato/verdicspec/actions/workflows/ci.yml)
 [![GitHub release](https://img.shields.io/github/v/release/luismpenholato/verdicspec?display_name=tag&sort=semver)](https://github.com/luismpenholato/verdicspec/releases)
 [![npm version](https://img.shields.io/npm/v/verdicspec.svg)](https://www.npmjs.com/package/verdicspec)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/luismpenholato?label=Sponsor&logo=githubsponsors&logoColor=white&color=ea4aaa)](https://github.com/sponsors/luismpenholato)
 [![License: MIT](https://img.shields.io/github/license/luismpenholato/verdicspec)](./LICENSE)
 
 ## Modular engineering for AI-assisted software development
 
-Install the latest published package from [npm](https://www.npmjs.com/package/verdicspec):
+Verdicspec is a **portable, technology-agnostic method** for building reliable software with AI coding agents (Cursor, Claude, Codex, Antigravity).
+
+It combines specification-driven development with disciplined implementation, testing, observability, debugging, review, and verifiable delivery evidence — installable as an npm CLI into any repo.
 
 ```powershell
 npm install --global verdicspec
-```
-
-Then install the method into a project:
-
-```powershell
 verdicspec init . --tool all
 ```
 
-Verdicspec is a technology-agnostic engineering method for building reliable software with AI agents.
-
-It combines specification-driven development with disciplined implementation, testing, observability, debugging, review, and verifiable delivery evidence.
+Package: [npmjs.com/package/verdicspec](https://www.npmjs.com/package/verdicspec)
 
 ## Principles
 
@@ -160,4 +156,12 @@ The npm CI/CD setup is documented in [docs/npm-release.md](docs/npm-release.md).
 ## Status
 
 Early development. The method and skill contracts are expected to evolve before the first stable release.
+
+## Support the project
+
+Verdicspec is free and open source (MIT).
+
+If it helps your team ship with clearer specs and safer agent workflows, consider supporting continued development through [GitHub Sponsors](https://github.com/sponsors/luismpenholato).
+
+Sponsorships help fund releases, skills/templates, multi-tool adapters, docs, CI, and issue triage.
 
