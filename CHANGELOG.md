@@ -19,6 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 
 - Unused adapters: `.clinerules/`, `GEMINI.md`, and `.github/copilot-instructions.md`.
 - Supported tools are now Cursor, Claude Code, Codex, and Antigravity.
+- PowerShell scripts `scripts/install.ps1` and `scripts/validate.ps1` — use `verdicspec init` and `npm test` / `npm run validate` instead.
 
 ## [0.2.2] - 2026-11-22
 

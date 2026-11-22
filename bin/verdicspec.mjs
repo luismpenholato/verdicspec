@@ -141,12 +141,35 @@ function validate() {
   const agentsDir = join(packageRoot, 'agents');
   const agents = readdirSync(agentsDir).filter((entry) => entry.endsWith('.md'));
   if (agents.length < 10) throw new Error(`Expected at least 10 agents, found ${agents.length}`);
-  for (const required of ['AGENTS.md', 'templates/feature-spec.md', 'technology-packs/java/README.md', 'agents/debugger.md']) {
-    if (!existsSync(join(packageRoot, required))) throw new Error(`Missing required entry: ${required}`);
+  const required = [
+    'AGENTS.md',
+    'CLAUDE.md',
+    'LICENSE',
+    'README.md',
+    '.verdicspec/config.json',
+    '.cursor/rules/verdicspec.mdc',
+    '.cursor/rules/agent-skill-routing.mdc',
+    'agents/debugger.md',
+    'commands/specify.md',
+    'templates/feature-spec.md',
+    'templates/threat-model.md',
+    'technology-packs/node/README.md',
+    'technology-packs/dotnet/README.md',
+    'technology-packs/python/README.md',
+    'technology-packs/java/README.md',
+    'skills/practices/security/SKILL.md'
+  ];
+  for (const entry of required) {
+    if (!existsSync(join(packageRoot, entry))) throw new Error(`Missing required entry: ${entry}`);
   }
   for (const mirror of ['.cursor/agents', '.claude/agents', '.agents/agents']) {
     if (!existsSync(join(packageRoot, mirror, 'debugger.md'))) {
       throw new Error(`Missing mirrored agent: ${mirror}/debugger.md`);
+    }
+  }
+  for (const mirror of ['.cursor/skills', '.claude/skills', '.agents/skills']) {
+    if (!existsSync(join(packageRoot, mirror, 'core', 'specification', 'SKILL.md'))) {
+      throw new Error(`Missing mirrored skill: ${mirror}/core/specification/SKILL.md`);
     }
   }
   console.log(`Validation passed: ${skills.length} skills, ${agents.length} agents.`);

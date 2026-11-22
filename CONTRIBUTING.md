@@ -52,15 +52,16 @@ technology-packs/ # Stack-focused guidance
 ## Test locally
 
 ```powershell
-npm test
 npm run validate
-node bin/verdicspec.mjs list
+npm test
+npm run list
 ```
 
-Optional install check into a temporary folder:
+Optional install smoke check:
 
 ```powershell
 node bin/verdicspec.mjs init .tmp-verify --tool all --force
+node bin/verdicspec.mjs doctor .tmp-verify
 ```
 
 ## Report bugs
