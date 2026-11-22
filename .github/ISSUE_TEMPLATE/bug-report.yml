@@ -1,0 +1,77 @@
+name: Bug report
+description: Report broken CLI, installation, validation, adapters, or undetected skills/agents.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for broken installation, validation errors, adapter issues, or skills/agents not being detected.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - CLI (`verdicspec`)
+        - Skills
+        - Agents
+        - Adapters (Cursor/Claude/Codex/Antigravity)
+        - Documentation
+        - npm package
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: path
+    attributes:
+      label: Path or command
+      description: Skill/agent path, command name, or "repository" if not specific.
+      placeholder: skills/core/specification or verdicspec init
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Bug category
+      options:
+        - Broken installation
+        - Validator error
+        - Skill/agent not detected
+        - Adapter mismatch
+        - Broken local link
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Commands, agent, and environment details.
+      placeholder: |
+        1. Run `npm run validate`
+        2. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: |
+        - Agent: Cursor
+        - Node.js: 20.x
+        - OS: Windows 11
+        - verdicspec: 0.2.x

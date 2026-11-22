@@ -1,0 +1,53 @@
+name: Skill request
+description: Propose a new skill for the Verdicspec method.
+title: "[Skill request]: "
+labels:
+  - skill-request
+body:
+  - type: input
+    id: proposed-name
+    attributes:
+      label: Proposed skill name
+      description: Folder name in kebab-case under `skills/` or `technology-packs/`.
+      placeholder: practices/my-new-skill
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem solved
+      description: What recurring task or decision should this skill guide?
+    validations:
+      required: true
+
+  - type: input
+    id: stack
+    attributes:
+      label: Target stack
+      description: Use `technology-agnostic` when the skill belongs in core/practices/workflows.
+      placeholder: technology-agnostic, Node.js, .NET, Python, Java
+    validations:
+      required: true
+
+  - type: textarea
+    id: triggers
+    attributes:
+      label: When should it be triggered?
+      description: User prompts, file patterns, or scenarios that should activate the skill.
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Usage examples
+      description: Short prompt → expected behavior examples.
+    validations:
+      required: true
+
+  - type: textarea
+    id: overlap
+    attributes:
+      label: Overlap risks
+      description: Could this duplicate or conflict with an existing skill or agent?

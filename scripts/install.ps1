@@ -2,7 +2,7 @@ param(
     [Parameter(Mandatory = $true)]
     [string] $Target,
 
-    [ValidateSet('codex', 'claude', 'cursor', 'antigravity', 'copilot', 'gemini', 'cline', 'all')]
+    [ValidateSet('codex', 'claude', 'cursor', 'antigravity', 'all')]
     [string] $Tool = 'all',
 
     [switch] $Force
@@ -48,19 +48,8 @@ if ($Tool -in @('cursor', 'all')) {
     Copy-Safely (Join-Path $sourceRoot '.cursor') (Join-Path $targetRoot '.cursor')
 }
 
-if ($Tool -in @('codex', 'antigravity', 'copilot', 'all')) {
-    if ($Tool -eq 'copilot' -or $Tool -eq 'all') {
-        Copy-Safely (Join-Path $sourceRoot '.github\copilot-instructions.md') (Join-Path $targetRoot '.github\copilot-instructions.md')
-    }
+if ($Tool -in @('codex', 'antigravity', 'all')) {
     Install-Bundle '.agents'
-}
-
-if ($Tool -in @('gemini', 'all')) {
-    Copy-Safely (Join-Path $sourceRoot 'GEMINI.md') (Join-Path $targetRoot 'GEMINI.md')
-}
-
-if ($Tool -in @('cline', 'all')) {
-    Copy-Safely (Join-Path $sourceRoot '.clinerules') (Join-Path $targetRoot '.clinerules')
 }
 
 Write-Host 'Verdicspec installation completed.'

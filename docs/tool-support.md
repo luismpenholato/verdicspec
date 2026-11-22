@@ -12,13 +12,9 @@ ChatGPT or the GPT API by itself does not automatically inspect a local reposito
 
 | Environment | Entry point | Level |
 |---|---|---|
-| OpenAI Codex / ChatGPT Codex | `AGENTS.md` | Native repository instructions |
-| GPT through another agent host | Host-specific adapter | Supported when the host loads the files |
-| Claude Code | `CLAUDE.md`, `.claude/skills/` | Native adapter and skills |
-| Cursor | `.cursor/rules/` | Native rules adapter |
-| GitHub Copilot | `.github/copilot-instructions.md`, `.agents/skills/` | Native instructions and skills |
-| Gemini CLI | `GEMINI.md` | Native context adapter |
-| Cline | `.clinerules/` | Native workspace rules adapter |
+| OpenAI Codex / ChatGPT Codex | `AGENTS.md`, `.agents/` | Native repository instructions, agents, and skills |
+| Claude Code | `CLAUDE.md`, `.claude/` | Native adapter, agents, and skills |
+| Cursor | `.cursor/rules/`, `.cursor/agents/`, `.cursor/skills/` | Native rules, agents, and skills |
+| Antigravity | `AGENTS.md`, `.agents/` | Native rules, agents, and skills |
 
 The portable contract is the same in every environment: read the repository contract, discover the project technology, select the workflow, load only the required skills, and report evidence.
-

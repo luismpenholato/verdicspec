@@ -73,7 +73,7 @@ docs/                      # Method documentation and design decisions
 
 ## Portability
 
-The method uses a canonical `AGENTS.md`, portable `SKILL.md` files, tool-independent commands, and thin adapters for Cursor, Claude Code, Codex, Antigravity, GitHub Copilot, Gemini CLI, and Cline. Run `scripts/install.ps1` from PowerShell to install the method into another project without overwriting existing files unless `-Force` is supplied.
+The method uses a canonical `AGENTS.md`, portable `SKILL.md` files, tool-independent commands, and thin adapters for Cursor, Claude Code, Codex, and Antigravity. Run `scripts/install.ps1` from PowerShell to install the method into another project without overwriting existing files unless `-Force` is supplied.
 
 The canonical structure is independent of a model provider, editor, CLI, or programming language. Technology packs provide focused guidance for Node.js, .NET, Python, and Java.
 

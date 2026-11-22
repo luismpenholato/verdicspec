@@ -1,0 +1,51 @@
+name: Skill or agent correction
+description: Report incorrect or outdated instructions in an existing skill or agent.
+title: "[Correction]: "
+labels:
+  - skill-correction
+body:
+  - type: input
+    id: path
+    attributes:
+      label: Affected path
+      placeholder: skills/core/specification or agents/debugger.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: incorrect
+    attributes:
+      label: Incorrect instruction
+      description: Quote or reference the problematic section.
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current behavior
+      description: What does the agent or developer do today when following the guidance?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Technical evidence
+      description: Links to docs, reproducible examples, or adapter mismatches.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who is affected and how severe is the issue?

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security advisory
+    url: https://github.com/luismpenholato/verdicspec/security/advisories/new
+    about: Report malicious content, prompt injection, unsafe instructions, or package supply-chain issues privately.

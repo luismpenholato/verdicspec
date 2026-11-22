@@ -20,17 +20,14 @@ const adapters = {
   codex: ['AGENTS.md', '.agents-bundle'],
   antigravity: ['AGENTS.md', '.agents-bundle'],
   claude: ['CLAUDE.md', '.claude-bundle'],
-  cursor: ['.cursor'],
-  copilot: ['.github/copilot-instructions.md', '.agents-bundle'],
-  gemini: ['GEMINI.md'],
-  cline: ['.clinerules']
+  cursor: ['.cursor']
 };
 
 function usage() {
   console.log(`Verdicspec CLI
 
 Usage:
-  verdicspec init [directory] [--tool all|codex|claude|cursor|antigravity|copilot|gemini|cline] [--force]
+  verdicspec init [directory] [--tool all|codex|claude|cursor|antigravity] [--force]
   verdicspec validate
   verdicspec list
   verdicspec doctor [directory]

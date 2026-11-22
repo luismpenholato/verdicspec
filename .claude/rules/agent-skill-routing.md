@@ -1,34 +1,34 @@
 ---
-description: Roteamento automatico de agents/skills Verdicspec — aplique sem o usuario pedir pelo nome
+description: Automatic Verdicspec agent/skill routing — apply without the user naming the agent
 alwaysApply: true
 ---
 
-# Roteamento automatico (obrigatorio)
+# Automatic routing (required)
 
-O usuario **nao precisa** dizer "use o agent X". Escolha pelo intent e carregue a skill canonica.
+The user does **not** need to say "use agent X". Choose by intent and load the canonical skill.
 
-| Intent | Agent | Skill primaria |
+| Intent | Agent | Primary skill |
 |--------|-------|----------------|
-| explorar / mapear / descobrir | `explorer` | `skills/core/project-discovery` |
-| especificar feature / comportamento | `specifier` | `skills/core/specification` |
-| planejar tasks | `planner` | `skills/core/planning` |
-| arquitetura / trade-offs | `architect` | `skills/core/architecture` |
-| bug / erro / regressao | `debugger` | `skills/core/debugging` |
-| spike / incerteza tecnica | `spike-engineer` | `skills/core/spike` |
-| implementar apos aprovacao | `implementer` | `skills/workflows/feature-development` |
-| testes | `tester` | `skills/practices/testing` |
-| pronto? / gate final | `verifier` | `skills/practices/verification` |
-| seguranca | `security-reviewer` | `skills/practices/security` |
-| logs / metricas | `observability-engineer` | `skills/practices/observability` |
-| review de codigo | `reviewer` | `skills/practices/code-review` |
-| criar PR | `pr-creator` | `skills/practices/pull-request` |
+| explore / map / discover | `explorer` | `skills/core/project-discovery` |
+| specify feature / behavior | `specifier` | `skills/core/specification` |
+| plan tasks | `planner` | `skills/core/planning` |
+| architecture / trade-offs | `architect` | `skills/core/architecture` |
+| bug / error / regression | `debugger` | `skills/core/debugging` |
+| spike / technical uncertainty | `spike-engineer` | `skills/core/spike` |
+| implement after approval | `implementer` | `skills/workflows/feature-development` |
+| tests | `tester` | `skills/practices/testing` |
+| done? / final gate | `verifier` | `skills/practices/verification` |
+| security | `security-reviewer` | `skills/practices/security` |
+| logs / metrics | `observability-engineer` | `skills/practices/observability` |
+| code review | `reviewer` | `skills/practices/code-review` |
+| create PR | `pr-creator` | `skills/practices/pull-request` |
 | release | `releaser` | `skills/practices/release-readiness` |
 
 ## Gates
 
-1. Stack desconhecida → `technology-discovery` antes.
-2. Feature media/grande → specify → aprovacao → plan → implement.
-3. Bug → causa raiz antes de patch.
-4. Antes de pronto/commit/PR → `verifier`.
-5. Nao modernize stack/padrao sem pedido explicito.
-6. Nao declare evidencia que nao foi executada.
+1. Unknown stack → run `technology-discovery` first.
+2. Medium/large feature → specify → approval → plan → implement.
+3. Bug → root cause before patch.
+4. Before done/commit/PR → `verifier`.
+5. Do not modernize stack/patterns without an explicit request.
+6. Do not claim evidence that was not executed.

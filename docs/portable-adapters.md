@@ -20,9 +20,6 @@ Verdicspec has one canonical source and thin tool adapters.
 | Claude Code | `CLAUDE.md` + `.claude/rules/` | `.claude/agents/` | `.claude/skills/` |
 | OpenAI Codex | `AGENTS.md` | `.agents/agents/` | `.agents/skills/` or `skills/` |
 | Antigravity | `.agents/rules/` + `AGENTS.md` | `.agents/agents/` | `.agents/skills/` |
-| GitHub Copilot | `.github/copilot-instructions.md` | — | `.agents/skills/` |
-| Gemini CLI | `GEMINI.md` | — | points to canonical skills |
-| Cline | `.clinerules/verdicspec.md` | — | points to canonical skills |
 
 Install with:
 
