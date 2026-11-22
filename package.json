@@ -1,6 +1,6 @@
 {
   "name": "verdicspec",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Portable specification-driven engineering method and skills for AI coding agents",
   "repository": {
     "type": "git",
