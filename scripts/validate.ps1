@@ -19,12 +19,12 @@ function Assert-Path([string] $Path) {
     'AGENTS.md',
     'CLAUDE.md',
     'GEMINI.md',
-    '.cursor/rules/maurao-method.mdc',
+    '.cursor/rules/verdicspec.mdc',
     '.github/copilot-instructions.md',
-    '.clinerules/maurao-method.md',
+    '.clinerules/verdicspec.md',
     'scripts/install.ps1',
-    '.maurao/config.json',
-    '.maurao/README.md',
+    '.verdicspec/config.json',
+    '.verdicspec/README.md',
     'docs/artifact-contract.md',
     'templates/threat-model.md',
     'templates/feature-spec.md',
@@ -62,19 +62,19 @@ if ($parseErrors.Count -gt 0) {
 }
 
 if ($TestInstaller) {
-    $validationTarget = Join-Path ([System.IO.Path]::GetTempPath()) "maurao-method-validation-$PID"
+    $validationTarget = Join-Path ([System.IO.Path]::GetTempPath()) "verdicspec-validation-$PID"
     try {
         New-Item -ItemType Directory -Force -Path $validationTarget | Out-Null
         & (Join-Path $root 'scripts/install.ps1') -Target $validationTarget -Tool all
 
         @(
             'AGENTS.md',
-            '.maurao/config.json',
+            '.verdicspec/config.json',
             'CLAUDE.md',
             'GEMINI.md',
-            '.cursor/rules/maurao-method.mdc',
+            '.cursor/rules/verdicspec.mdc',
             '.github/copilot-instructions.md',
-            '.clinerules/maurao-method.md',
+            '.clinerules/verdicspec.md',
             '.claude/skills/core/specification/SKILL.md',
             '.agents/skills/core/specification/SKILL.md',
             'technology-packs/java/README.md',

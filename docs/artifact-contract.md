@@ -1,6 +1,6 @@
 # Artifact contract
 
-The project-local `.maurao/` directory is the durable state of the method. Tool adapters and chat history are transport layers; they are not the source of truth.
+The project-local `.verdicspec/` directory is the durable state of the method. Tool adapters and chat history are transport layers; they are not the source of truth.
 
 ## Required artifacts by depth
 
@@ -13,10 +13,10 @@ The project-local `.maurao/` directory is the durable state of the method. Tool 
 
 ## Naming
 
-- Specifications: `.maurao/specifications/<change-id>.md`
-- Decisions: `.maurao/decisions/ADR-<number>-<slug>.md`
-- Plans: `.maurao/plans/<change-id>.md`
-- Reports: `.maurao/reports/<change-id>-<report-type>.md`
+- Specifications: `.verdicspec/specifications/<change-id>.md`
+- Decisions: `.verdicspec/decisions/ADR-<number>-<slug>.md`
+- Plans: `.verdicspec/plans/<change-id>.md`
+- Reports: `.verdicspec/reports/<change-id>-<report-type>.md`
 
 Use stable IDs such as `REQ-001`, `AC-001`, `TASK-001`, `TEST-001`, and `THR-001` to preserve traceability.
 

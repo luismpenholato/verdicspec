@@ -16,5 +16,5 @@ Check:
 - rollout controls and rollback path;
 - documentation and support readiness.
 
-Create `.maurao/reports/<change-id>-release-readiness.md` and return `Ready`, `Ready with explicit risk`, or `Not ready`, with evidence for the decision.
+Create `.verdicspec/reports/<change-id>-release-readiness.md` and return `Ready`, `Ready with explicit risk`, or `Not ready`, with evidence for the decision.
 

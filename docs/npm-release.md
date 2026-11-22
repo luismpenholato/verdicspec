@@ -22,7 +22,7 @@ The repository has three GitHub Actions workflows:
 6. If you prefer tokenless publishing, configure npm Trusted Publishing instead. On npmjs.com, open the package settings and add a GitHub Actions Trusted Publisher.
 7. Configure:
    - owner: `luismpenholato`;
-   - repository: `maurao-method`;
+   - repository: `verdicspec`;
    - workflow filename: `publish.yml`;
    - environment: `npm`.
 8. Add approval rules to the `npm` environment if you want a human gate before publication.

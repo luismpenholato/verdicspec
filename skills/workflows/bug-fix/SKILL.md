@@ -15,5 +15,5 @@ Required outcomes:
 - regression test where practical;
 - exact validation report.
 
-Store the investigation and verification under `.maurao/reports/<change-id>-debugging.md` and `.maurao/reports/<change-id>-verification.md` when the host project uses the artifact contract.
+Store the investigation and verification under `.verdicspec/reports/<change-id>-debugging.md` and `.verdicspec/reports/<change-id>-verification.md` when the host project uses the artifact contract.
 

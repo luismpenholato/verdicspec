@@ -1,4 +1,4 @@
-# Maurao Method instructions
+# Verdicspec instructions
 
 Follow the repository contract in [`AGENTS.md`](../AGENTS.md).
 

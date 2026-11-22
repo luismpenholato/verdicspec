@@ -1,6 +1,6 @@
 # Method Overview
 
-Maurao Method treats software development as a sequence of explicit decisions and verifiable outcomes.
+Verdicspec treats software development as a sequence of explicit decisions and verifiable outcomes.
 
 ```text
 Understand → Specify → Plan → Implement → Verify → Review → Deliver

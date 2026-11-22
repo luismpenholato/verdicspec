@@ -1,0 +1,17 @@
+{
+  "method": "verdicspec",
+  "version": "0.2",
+  "projectMode": "auto",
+  "rigor": "adaptive",
+  "technologyDiscovery": "required",
+  "artifacts": {
+    "root": ".verdicspec",
+    "productBrief": ".verdicspec/product-brief.md",
+    "systemContext": ".verdicspec/system-context.md",
+    "technologyInventory": ".verdicspec/technology-inventory.md",
+    "specifications": ".verdicspec/specifications",
+    "decisions": ".verdicspec/decisions",
+    "plans": ".verdicspec/plans",
+    "reports": ".verdicspec/reports"
+  }
+}

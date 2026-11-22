@@ -26,7 +26,7 @@ Inspect the repository, history when useful, build system, tests, runtime config
 
 ## Output
 
-Create or update `.maurao/system-context.md` and coordinate with `technology-discovery`, which creates `.maurao/technology-inventory.md`.
+Create or update `.verdicspec/system-context.md` and coordinate with `technology-discovery`, which creates `.verdicspec/technology-inventory.md`.
 
 Do not produce a confident implementation plan when this baseline is missing material information.
 

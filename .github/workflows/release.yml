@@ -11,7 +11,7 @@ on:
       - '.clinerules/**'
       - '.cursor/**'
       - '.github/copilot-instructions.md'
-      - '.maurao/**'
+      - '.verdicspec/**'
       - 'bin/**'
       - 'commands/**'
       - 'docs/**'

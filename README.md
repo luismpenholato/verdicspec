@@ -1,25 +1,25 @@
-# Maurao Method
+# Verdicspec
 
-[![CI](https://github.com/luismpenholato/maurao-method/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/luismpenholato/maurao-method/actions/workflows/ci.yml)
-[![GitHub release](https://img.shields.io/github/v/release/luismpenholato/maurao-method?display_name=tag&sort=semver)](https://github.com/luismpenholato/maurao-method/releases)
-[![npm version](https://img.shields.io/npm/v/maurao-method.svg)](https://www.npmjs.com/package/maurao-method)
-[![License](https://img.shields.io/npm/l/maurao-method.svg)](https://opensource.org/license/mit/)
+[![CI](https://github.com/luismpenholato/verdicspec/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/luismpenholato/verdicspec/actions/workflows/ci.yml)
+[![GitHub release](https://img.shields.io/github/v/release/luismpenholato/verdicspec?display_name=tag&sort=semver)](https://github.com/luismpenholato/verdicspec/releases)
+[![npm version](https://img.shields.io/npm/v/verdicspec.svg)](https://www.npmjs.com/package/verdicspec)
+[![License](https://img.shields.io/npm/l/verdicspec.svg)](https://opensource.org/license/mit/)
 
 ## Modular engineering for AI-assisted software development
 
-Install the latest published package from [npm](https://www.npmjs.com/package/maurao-method):
+Install the latest published package from [npm](https://www.npmjs.com/package/verdicspec):
 
 ```powershell
-npm install --global maurao-method
+npm install --global verdicspec
 ```
 
 Then install the method into a project:
 
 ```powershell
-maurao init . --tool all
+verdicspec init . --tool all
 ```
 
-Maurao Method is a technology-agnostic engineering method for building reliable software with AI agents.
+Verdicspec is a technology-agnostic engineering method for building reliable software with AI agents.
 
 It combines specification-driven development with disciplined implementation, testing, observability, debugging, review, and verifiable delivery evidence.
 
@@ -35,6 +35,7 @@ It combines specification-driven development with disciplined implementation, te
 ## Repository structure
 
 ```text
+agents/                    # Named agents (mirrored for Cursor/Claude/Codex/Antigravity)
 skills/
 ├── core/                  # Technology-agnostic engineering capabilities
 ├── practices/             # Reusable engineering practices
@@ -43,6 +44,7 @@ skills/
 commands/                  # Tool-independent command entry points
 templates/                 # Specifications, plans, tests, reviews, and reports
 docs/                      # Method documentation and design decisions
+.verdicspec/               # Method artifacts root
 ```
 
 ## Initial skills
@@ -71,7 +73,7 @@ docs/                      # Method documentation and design decisions
 
 ## Portability
 
-The method uses a canonical `AGENTS.md`, portable `SKILL.md` files, tool-independent commands, and thin adapters for Codex, Claude Code, Cursor, GitHub Copilot, Gemini CLI, and Cline. Run `scripts/install.ps1` from PowerShell to install the method into another project without overwriting existing files unless `-Force` is supplied.
+The method uses a canonical `AGENTS.md`, portable `SKILL.md` files, tool-independent commands, and thin adapters for Cursor, Claude Code, Codex, Antigravity, GitHub Copilot, Gemini CLI, and Cline. Run `scripts/install.ps1` from PowerShell to install the method into another project without overwriting existing files unless `-Force` is supplied.
 
 The canonical structure is independent of a model provider, editor, CLI, or programming language. Technology packs provide focused guidance for Node.js, .NET, Python, and Java.
 
@@ -88,18 +90,18 @@ See [tool support](docs/tool-support.md) for the distinction between GPT as a mo
 When published, the recommended installation will be:
 
 ```powershell
-npm install -g maurao-method
-maurao init . --tool all
+npm install -g verdicspec
+verdicspec init . --tool all
 ```
 
 Available commands:
 
 ```text
-maurao init [directory]   Install the method in a project
-maurao validate           Validate the packaged skills and required files
-maurao list               List commands and skills
-maurao doctor [directory] Check whether a project is installed correctly
-maurao inspect [directory] Detect technology evidence and write the inventory
+verdicspec init [directory]   Install the method in a project
+verdicspec validate           Validate the packaged skills and required files
+verdicspec list               List commands and skills
+verdicspec doctor [directory] Check whether a project is installed correctly
+verdicspec inspect [directory] Detect technology evidence and write the inventory
 ```
 
 The npm CI/CD setup is documented in [docs/npm-release.md](docs/npm-release.md). Pull requests run validation automatically, and package changes merged into `main` create a patch release, npm publication, version tag, and GitHub Release.

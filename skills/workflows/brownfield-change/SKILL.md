@@ -19,8 +19,8 @@ Compose `project-discovery`, `technology-discovery`, `brownfield-analysis`, `spe
 
 ## Outputs and gates
 
-- Baseline: `.maurao/system-context.md` and `.maurao/technology-inventory.md`.
-- Change: `.maurao/specifications/<change-id>.md` and `.maurao/plans/<change-id>.md`.
+- Baseline: `.verdicspec/system-context.md` and `.verdicspec/technology-inventory.md`.
+- Change: `.verdicspec/specifications/<change-id>.md` and `.verdicspec/plans/<change-id>.md`.
 - Compatibility: invariants and migration strategy reviewed.
 - Delivery: verification and release-readiness reports complete.
 

@@ -1,6 +1,6 @@
-# Maurao Method workflow
+# Verdicspec workflow
 
-Maurao is an adaptive SDD method. It does not force the same ceremony on a landing page, a payment flow, and a distributed migration.
+Verdicspec is an adaptive SDD method. It does not force the same ceremony on a landing page, a payment flow, and a distributed migration.
 
 ## Lifecycle
 

@@ -1,4 +1,4 @@
-name: CI
+﻿name: CI
 
 on:
   push:
@@ -32,8 +32,9 @@ jobs:
 
       - name: Test CLI help and package listing
         run: |
-          node bin/maurao.mjs help
-          node bin/maurao.mjs list
+          node bin/verdicspec.mjs help
+          node bin/verdicspec.mjs list
 
       - name: Check package contents
         run: npm pack --dry-run
+

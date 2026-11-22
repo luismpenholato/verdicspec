@@ -21,8 +21,8 @@ Do not create speculative infrastructure or broad abstractions before the first 
 
 ## Outputs and gates
 
-- Discovery: `.maurao/product-brief.md` approved.
-- Baseline: `.maurao/technology-inventory.md` and `.maurao/system-context.md` available.
+- Discovery: `.verdicspec/product-brief.md` approved.
+- Baseline: `.verdicspec/technology-inventory.md` and `.verdicspec/system-context.md` available.
 - Specification: requirements and acceptance criteria approved.
 - Delivery: vertical slice verified with an explicit release decision.
 
