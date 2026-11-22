@@ -19,6 +19,8 @@ verdicspec init . --tool all
 
 Package: [npmjs.com/package/verdicspec](https://www.npmjs.com/package/verdicspec)
 
+Companion skills library for product stacks (.NET, Angular, React, security): **[verdicspec-skills](https://github.com/luismpenholato/verdicspec-skills)**.
+
 ## Principles
 
 - Understand the problem before changing the code.
